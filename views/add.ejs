@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css"> 
+    <title>BookStore</title>
+</head>
+<body>
+    <h2 class = "c1">Add a New Book!</h2>
+
+    <form action="/addbook" method="POST">
+        <label>Book ID: </label>
+        <input type="number" placeholder="Enter Book ID" name="pid"><br><br>
+
+        <label>Name of the Book </label>&nbsp;
+        <input type="text" placeholder="Enter Book Name" name="bookname"><br><br>
+
+        <label>Author: </label>&nbsp;
+        <input type="text" placeholder="Enter Author Name" name="author"><br><br>
+
+        <label>Genre: </label>&nbsp;
+        <input type="text" placeholder="Enter Book ID" name="genre"><br><br>
+
+        <label>Stock: </label>&nbsp;
+        <input type="number" placeholder="Enter quantity" name="stock"><br><br>
+
+        <label>Price: </label>&nbsp;
+        <input type="number" placeholder="Enter Book Price" name="price"><br><br>
+
+        <button type="submit">SUBMIT</button>
+
+    </form>
+
+    <a href="/" class="c2">Home Page</a>
+
+</body>
+</html>

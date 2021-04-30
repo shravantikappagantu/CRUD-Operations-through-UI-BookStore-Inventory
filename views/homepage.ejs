@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>BookStore Inventory </title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width">
+        <link rel ="stylesheet" href="styles.css"> 
+    </head>
+
+    <body>
+        <h1 class= "c1">Welcome to Books On Bay!!! </h1>
+
+        <h3><a href="/addbook" class="c2">Add New Book</a></h3>
+        <h3><a href="/updatestock" class="c2">Update Stock</a></h3>
+        <h3><a href="/delete" class="c2">Delete Book</a></h3>
+
+        <center>
+            <table>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Stock</th>
+                    <th>Price</th>
+                </tr>
+
+                <% for(var i =0;i<data.length;i++) { %>
+                <tr>
+                    <td><%= data[i].pid %></td>
+                    <td><%= data[i].bookname %></td>
+                    <td><%= data[i].author %></td>
+                    <td><%= data[i].genre %></td>
+                    <td><%= data[i].stock %></td>
+                    <td><%= data[i].price %></td>
+                </tr>
+               <% } %>
+            </table>
+        </centers>
+
+    </body>
+</html>
